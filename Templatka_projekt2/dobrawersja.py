@@ -6,7 +6,7 @@ import pygame as pg
 import pandas as pd
 import filterlib as flt
 import blink as blk
-#from pyOpenBCI import OpenBCIGanglion
+from pyOpenBCI import OpenBCIGanglion
 
 import pygame
 from pygame import mixer
@@ -38,7 +38,9 @@ def blinks_detector(quit_program, blink_det, blinks_num, blink,):
                 print('Disconnect signal sent...')
                 board.stop_stream()
 
-
+                
+    ####ZMIENIĆ NA FALSE I WPISAĆ MAC####
+    
     SYMULACJA_SYGNALU = True
 
     mac_adress = '4b:fd:a2:17:03:db'
@@ -174,7 +176,9 @@ if __name__ == "__main__":
     running = True
     while running:
 
-
+        #Prędkość gry
+        pygame.time.delay(15)
+        
         screen.fill((0, 0, 0))
 
         screen.blit(background, (0, 0))
