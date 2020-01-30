@@ -41,9 +41,9 @@ def blinks_detector(quit_program, blink_det, blinks_num, blink,):
                 
     ####ZMIENIĆ NA FALSE I WPISAĆ MAC####
     
-    SYMULACJA_SYGNALU = True
+    SYMULACJA_SYGNALU = False
 
-    mac_adress = '4b:fd:a2:17:03:db'
+    mac_adress = 'f0:a6:74:94:b3:4d'
 
 
     clock = pg.time.Clock()
